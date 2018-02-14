@@ -1,0 +1,8 @@
+<h2>Listado de productos</h2>
+<div class="container">
+  <div *ngFor="let producto of listadoProductos" class="producto">
+    <h3>{{ producto.nombre }}</h3>
+    <img src="{{producto.urlImagen}}">
+    <strong>Precio:</strong> ${{ producto.precio }}
+  </div>
+</div>
